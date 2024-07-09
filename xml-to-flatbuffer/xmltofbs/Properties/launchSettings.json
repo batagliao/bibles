@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "xmltofbs no args": {
+      "commandName": "Project"
+    },
+    "xmltofbs --help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    },
+    "xmltofbs --version": {
+      "commandName": "Project",
+      "commandLineArgs": "--version",
+      "remoteDebugEnabled": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+﻿namespace flatbuffer;
+
+attribute "fs_serializer";
+
+table Verse {
+	order: short;
+	text: string;
+}
+
+table Chapter {
+	order: short;
+	verses: [Verse];
+}
+
+table Book {
+	order: short;
+	chapters: [Chapter];
+}
+
+table Bible (fs_serializer) {
+	title: string;
+	books: [Book];
+}
+
+root_type Bible;
